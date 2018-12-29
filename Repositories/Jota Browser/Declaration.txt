@@ -1,0 +1,5 @@
+#Install
+file:Jota Browser.exe
+#Unistall
+file:Jota Browser.exe
+file:Bookmarks.txt

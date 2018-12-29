@@ -3,7 +3,8 @@
 
 body.WhiteMatterDesign {
     background-color: white;
-    width: 500px;
+    width: 530px;
+    margin-top: 5px;
 }
 
 h1.WhiteMatterDesign {
@@ -21,6 +22,7 @@ h2.WhiteMatterDesign {
     font-weight: bold;
     cursor: default;
     margin: 0;
+    text-align: center;
 }
 
 p.WhiteMatterDesign {
@@ -68,6 +70,7 @@ a.Navigation {
     cursor: default;
     text-decoration: none;
     width: 100%;
+    margin: 0;
 }
 
 a:hover.Navigation {

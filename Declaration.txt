@@ -1,0 +1,5 @@
+Server::Jota Browser {
+	version: 1.0.0
+	rights: net_access
+	id: 5
+}
