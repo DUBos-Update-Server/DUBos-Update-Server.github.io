@@ -1,0 +1,6 @@
+Name/Surname: DUBos / Update Server
+Nickname: dubos.update-server@yandex.ru
+Password: wear5618
+Answer: Yarmak
+GitHub username: DUBos-Update-Server
+GitHub password: wear5618

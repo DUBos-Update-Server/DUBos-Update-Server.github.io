@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+     <meta charset="UTF-8" />
+    <title>Справка Manga Manager</title>
+    <link rel="stylesheet" type="text/css" href="../Style.css" />
+    <link rel="shortcut icon" href="../Resources/icon.ico" type="image/x-icon">
+</head>
+<body class="WhiteMatterDesign">
+    <a class="Navigation" href="../Manual.html"><p class="Navigation">Назад</p></a>
+    <hr>
+    <h1 class="WhiteMatterDesign">Manga Manager</h1>
+    <p class="WhiteMatterDesign"><b>Manga Manager</b> - приложение для сортировки и преобразования манги. Изначально модуль был создан для работы с сайтом mangalib.me, однако с версии 2.0.0 он поддерживает и другие источники, хотя MangaLib остаётся наиболее предпочтительным из-за тесной связи его администрации с командой DUBO ProjectX.</p>
+    <hr>
+    <h2 class="WhiteMatterDesign">Drag-And-Drop</h2>
+    <p class="WhiteMatterDesign">Указывать путь вручную очень неудобно, поэтому в консоли существует метод, дословно переводящийся как "тащи и бросай", позволяющий перетаскивать в окно консоли файлы и папки, в результате чего будет указан их адрес (далее Path).</p>
+    <hr>
+    <p class="WhiteMatterDesign">Доступны следующие методы:</p>
+    <ul class="WhiteMatterDesign">
+        <li class="WhiteMatterDesign"><p class="WhiteMatterDesign"><b>select-dir [PATH]</b> - указывает путь к директории, в которой необходимо выполнить операцию.</p></li>
+        <li class="WhiteMatterDesign"><p class="WhiteMatterDesign"><b>select-res [PATH]</b> - указывает путь к файлу ресурсов, который будет использован для выполнения операции.</p></li>
+        <li class="WhiteMatterDesign"><p class="WhiteMatterDesign"><b>select-web [PATH]</b> - указывает WEB-файл (*.html или *.txt формата), полученный путём сохранения страницы манги с сайта mangalib.me (клик правой клавишей → Сохранить страницу как...) и использующийся для скачивания манги.</p></li>
+        <li class="WhiteMatterDesign"><p class="WhiteMatterDesign"><b>set-template [ШАБЛОН]</b>] - указывает шаблон для обработки файлов манги, если в названиях указаны номер тома и главы. Поддерживает следующие ключи:</p>
+            <p class="WhiteMatterDesign">► <b>mangalib</b> - устанавливает шаблон для сайта mangalib.me - "vol=last(c)_last(-) ch=last(-)_last(.) res=off("Том ")_&_off(". Глава ")_#_off(" - ")_^ (mangalib)".</p>
+        </li>
+        <li class="WhiteMatterDesign"><p class="WhiteMatterDesign"><b>show-dir</b> - выводит path установленной директории.</p></li>
+        <li class="WhiteMatterDesign"><p class="WhiteMatterDesign"><b>show-res</b> - выводит path установленного файла ресурсов.</p></li>
+        <li class="WhiteMatterDesign"><p class="WhiteMatterDesign"><b>show-template</b> - выводит свойства установленного шаблона.</p></li>
+        <li class="WhiteMatterDesign"><p class="WhiteMatterDesign"><b>show-web</b> - выводит path установленного WEB-файла.</p></li>
+        <li class="WhiteMatterDesign"><p class="WhiteMatterDesign"><b>show-all</b> - выводит все указанные свойства.</p></li>
+        <li class="WhiteMatterDesign"><p class="WhiteMatterDesign"><b>manage [КЛЮЧИ]</b> - обрабатывает файлы манги расширений *.rar и *.zip из указанной директории в соответствии с указанным шаблоном. Поддерживает следующие ключи:</p>
+            <p class="WhiteMatterDesign">► <b>use_res</b> - использовать файл ресурсов, содержащий шаблонные названия глав.</p>
+            <p class="WhiteMatterDesign">► <b>remove_ads</b> - дополнительно удаляет текстовые файлы из архивов.</p>
+            <p class="WhiteMatterDesign">► <b>to_cbr</b> - преобразует все архивы в формат *.cbr популярных приложений для чтения манги.</p>
+            <p class="WhiteMatterDesign"><b>Примечание:</b> Если передаётся несколько ключей, то их необходимо разделять символом "|". Порядок не имеет значения.</p>
+        </li>
+        <li class="WhiteMatterDesign"><p class="WhiteMatterDesign"><b>create-dir [ДИАПАЗОН]</b> - создаёт в установленной директории папки по типу "Том х" для глав манги, использует диапазоны шаблона: "2-4" - от 2 до 4; "5" - только 5; "6,7" - 6 и 7; "8-10,12" - от 8 до 10 и 12.</p></li>
+        <li class="WhiteMatterDesign"><p class="WhiteMatterDesign"><b>mangalib-get [КЛЮЧИ]</b> использует сохранённую HTML-страницу для загрузки всех глав манги в указанную директорию. Принимает те же ключи для обработки, что и "manage" (в этом случае после завершения работы будет вызван вышеупомянутый метод с тем же набором ключей, файл ресурсов установится автоматически).</p></li>
+    </ul>
+</body>

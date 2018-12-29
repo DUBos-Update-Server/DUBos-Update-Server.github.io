@@ -1,0 +1,86 @@
+/*Style CSS: 1.0.0 by DUB1401*/
+/*===================================================================================================================================================*/
+
+body.WhiteMatterDesign {
+    background-color: white;
+    width: 500px;
+}
+
+h1.WhiteMatterDesign {
+    color: black;
+    font-size: 24px;
+    text-align: center;
+    font-weight: bold;
+    cursor: default;
+    margin: 0;
+}
+
+h2.WhiteMatterDesign {
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: default;
+    margin: 0;
+}
+
+p.WhiteMatterDesign {
+    text-align: justify;
+    font-size: 16px;
+    cursor: default;
+    margin: 0;
+}
+
+ul.WhiteMatterDesign {
+    padding-left: 20px;
+    margin: 5px;
+}
+
+li.WhiteMatterDesign {
+    padding: 0;
+}
+
+a.Link {
+    text-decoration: none;
+    margin: 0;
+    text-align: justify;
+    color: blue;
+    font-size: 16px;
+}
+
+a:hover.Link {
+    color: green;
+}
+
+p.Navigation {
+    color: green;
+    font-size: 24px;
+    text-align: center;
+    margin: 0;
+    font-weight: bold;
+}
+
+p:hover.Navigation {
+    font-weight: bold;
+    color: blue;
+}
+
+a.Navigation {
+    cursor: default;
+    text-decoration: none;
+    width: 100%;
+}
+
+a:hover.Navigation {
+    cursor: pointer;
+    
+}
+
+div.Logo {
+    text-align: center;
+}
+
+img.Logo {
+    margin-top: 30px;
+    width: 40%;
+    height: auto;
+}
