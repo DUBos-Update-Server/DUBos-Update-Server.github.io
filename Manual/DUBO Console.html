@@ -24,4 +24,17 @@
         <li class="WhiteMatterDesign"><p class="WhiteMatterDesign"><b>system-repair-dir</b> - проверяет наличие всех необходимых для работы системы директорий. В случае, если таковые не обнаружены, пытается их восстановить.</p></li>
         <li class="WhiteMatterDesign"><p class="WhiteMatterDesign"><b>windows [СТРОКА]</b> - передаёт строку из аргумента в cmd (без прав администратора!).</p></li>
     </ul>
+    <hr>
+    <h2 class="WhiteMatterDesign">Advanced Packaging Tool</h2>
+    <p class="WhiteMatterDesign"><b>Advanced Packaging Tool</b> есть менеджер пакетов для загрузки, установки и обновления приложений из репозиториев DUBos. Название было взято от аналогичного по назначению, но не функционалу метода в системе Ubuntu.</p>
+    <ul class="WhiteMatterDesign">
+        <li class="WhiteMatterDesign"><p class="WhiteMatterDesign"><b>apt-get</b> - загружает с сервера список доступных репозитроиев. По умолчанию автоматически срабатывает при запуске консоли.</p></li>
+        <li class="WhiteMatterDesign"><p class="WhiteMatterDesign"><b>apt-list</b> - выводит список доступных для установки и обновления приложений.</p></li>
+        <li class="WhiteMatterDesign"><p class="WhiteMatterDesign"><b>apt-remove [ПРИЛОЖЕНИЕ]</b> - полностью удаляет указанное приложение. Вместо названия можно использовать уникальный индекс.</p></li>
+        <li class="WhiteMatterDesign"><p class="WhiteMatterDesign"><b>apt-install [ПРИЛОЖЕНИЕ]</b> - устанавливает указанное приложение из репозиториев на сервере DUBos. Вместо названия можно использовать уникальный индекс.</p></li>
+        <li class="WhiteMatterDesign"><p class="WhiteMatterDesign"><b>apt-update [ПРИЛОЖЕНИЕ]</b> - Обновляет указанное приложение. Вместо названия можно использовать уникальный индекс. Вместо приложения можно передать следующий ключ:</p>
+            <p class="WhiteMatterDesign">► <b>all</b> - устанавливает все доступные обновления.</p></li>
+        <li class="WhiteMatterDesign"><p class="WhiteMatterDesign"><b>apt-backup [ПРИЛОЖЕНИЕ]</b> - сохраняет указанное приложение в системной директории консоли с возможностью последующего восстановления. Вместо названия можно использовать уникальный индекс.</p></li>
+        <li class="WhiteMatterDesign"><p class="WhiteMatterDesign"><b>apt-recover [ПРИЛОЖЕНИЕ]</b> - переносит сохранённое в системной директории консоли приложение обратно в директорию приложений. Если пакет с такой же подписью уже установлен, то полностью заменит его. Вместо названия можно использовать уникальный индекс.</p></li>
+    </ul>
 </body>

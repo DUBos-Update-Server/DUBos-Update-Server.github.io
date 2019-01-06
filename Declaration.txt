@@ -3,3 +3,8 @@ Server::Jota Browser {
 	rights: net_access
 	id: 5
 }
+Server::Manga Manager {
+	version: 2.0.2
+	rights: net_access,filesystem
+	id: 4
+}

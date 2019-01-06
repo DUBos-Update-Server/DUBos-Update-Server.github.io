@@ -1,0 +1,2 @@
+file:Manga Manager.exe
+file:WinRAR.exe
