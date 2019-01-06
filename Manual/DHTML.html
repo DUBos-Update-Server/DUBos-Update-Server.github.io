@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+     <meta charset="UTF-8" />
+    <title>Справка DHTML</title>
+    <link rel="stylesheet" type="text/css" href="../Style.css" />
+    <link rel="shortcut icon" href="../Resources/icon.ico" type="image/x-icon">
+</head>
+<body class="WhiteMatterDesign">
+    <a class="Navigation" href="../Manual.html"><p class="Navigation">Назад</p></a>
+    <hr>
+    <h1 class="WhiteMatterDesign">DHTML</h1>
+    <p class="WhiteMatterDesign"><b>DHTML</b> - это стандарт для преобразования особых меток в обычный HTML с классами CSS, при помощи которого команда DUBO ProjectX упрощает работу с сайтом, в частности с "читалкой". Работает с текстовыми файлами кодировки Windows 1251. Каждая строка считается абзацем(&lt;p&gt;). Для рядовых пользователей ценности не представляет.</p>
+    <hr>
+    <h2 class="WhiteMatterDesign">Метки DHTML</h2>
+    <p class="WhiteMatterDesign">Как уже упоминалось, DHTML преобразует метки. Их список:</p>
+    <ul class="WhiteMatterDesign">
+        <li class="WhiteMatterDesign"><p class="WhiteMatterDesign"><b>|H|</b> - заголовок, создающий эффект ширного курсива. Строка после него будет иметь формат <b>&lt;h4 class="Reader">[СТРОКА]&lt;/h4&gt;</b></p></li>
+        <li class="WhiteMatterDesign"><p class="WhiteMatterDesign"><b>|I=...|</b> - заменяет строку на HTML-код иллюстрации следующего формата <b>&lt;img class="Reader[size]" href="[url]"&gt;</b>. Вместо многоточия указывается индекс ресурса, а <i>size</i> и <i>url</i> (об этом ниже, в графе "Создание иллюстраций").</p></li>
+        <li class="WhiteMatterDesign"><p class="WhiteMatterDesign"><b>строка без меток</b> - преобразуется в обычный абзац HTML без класса.</p></li>
+    </ul>
+    <p class="WhiteMatterDesign">Примечание: пустые строки (не содержащие ничего, кроме пробелов) и строки ресурсов игнорируются системой и при перезаписи файла удаляются.</p>
+    <hr>
+    <h2 class="WhiteMatterDesign">Создание иллюстраций</h2>
+    <p class="WhiteMatterDesign">Для создания иллюстраций нужно дописать строку с ресурсами. ВАЖНО: ресурсы должны определяться раньше (выше), чем они потребуются метке <b>|I|</b>. Для их создания требуется написать в начале строки "<b>src:</b>" и далее без пробелов указывать следующие ключи и значения по формату <b>[ключ]=[значение];</b> для следующих ключей:</p>
+    <ul class="WhiteMatterDesign">
+        <li class="WhiteMatterDesign"><p class="WhiteMatterDesign"><b>code</b> - индекс иллюстрации, указывающийся в теге <b>|I=...|</b> вместо многоточия.</p></li>
+        <li class="WhiteMatterDesign"><p class="WhiteMatterDesign"><b>url</b> - URL-адрес иллюстрации в сети.</p></li>
+        <li class="WhiteMatterDesign"><p class="WhiteMatterDesign"><b>size</b> - размер иллюстрации в процентах от ширины столбца абзацев (поддерживаются 50 и 75).</p></li>
+    </ul>
+    <p class="WhiteMatterDesign">Пример: <b>src:code=2;url=www.picture.com/2.jpg;size=75;</b> создаёт HTML-код <b>&lt;img class="Reader75" href="www.picture.com/1.jpg>.</b></p>
+</body>
