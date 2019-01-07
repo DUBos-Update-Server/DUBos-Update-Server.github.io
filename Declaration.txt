@@ -9,7 +9,7 @@ Server::Manga Manager {
 	id: 2
 }
 Server::DHTML {
-	version: 1.1.0
+	version: 1.1.1
 	rights: filesystem
 	id: 3
 }
