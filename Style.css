@@ -3,8 +3,9 @@
 
 body.WhiteMatterDesign {
     background-color: white;
-    width: 530px;
-    margin-top: 5px;
+    width: calc(100% - 10px);
+    font-family: monospace;
+    font-size: 10px;
 }
 
 h1.WhiteMatterDesign {
@@ -30,6 +31,18 @@ p.WhiteMatterDesign {
     font-size: 16px;
     cursor: default;
     margin: 0;
+}
+
+span.Example {
+    background-color: grey;
+    color: white;
+    border-radius: 5px;
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-top: -4px;
+    padding-bottom: -4px;
+    font-size: 14px;
+    font-weight: bold;
 }
 
 ul.WhiteMatterDesign {
@@ -58,6 +71,7 @@ p.Navigation {
     font-size: 24px;
     text-align: center;
     margin: 0;
+    margin-top: -5px;
     font-weight: bold;
 }
 
